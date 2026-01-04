@@ -239,19 +239,13 @@ export default function HealthManagementSystem() {
     printWindow.document.close();
   };
 
-  const handleDeletePatient = (id) => {
-<<<<<<< HEAD
+ const handleDeletePatient = (id) => {
   if (window.confirm('Are you sure you want to delete this patient? All associated visits will also be deleted.')) {
     setPatients(patients.filter(p => p.id !== id));
     setVisits(visits.filter(v => v.patientId !== id.toString()));
   }
 };
-=======
-    if (window.confirm('Are you sure you want to delete this patient?')) {
-      setPatients(patients.filter(p => p.id !== id));
-    }
-  };
->>>>>>> 96da67ed9a9cebbb0444020586cecb587c1553f7
+
 
   const handleEditPatient = (patient) => {
     setEditingPatient(patient);

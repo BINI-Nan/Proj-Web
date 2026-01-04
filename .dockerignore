@@ -1,0 +1,13 @@
+### **File 2: `.dockerignore`**
+```
+node_modules
+npm-debug.log
+build
+.dockerignore
+Dockerfile
+.git
+.gitignore
+README.md
+.env
+.DS_Store
+*.md
